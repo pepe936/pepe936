@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="utf-8" /> 
+        <title>Hola Geovanna jajaja
+        </title>
+    <script>
+       let nombre = ""
+       nombre = prompt("Dime tu nombre")
+       nombre = prompt("Vamos tu nombre real no te va a pasar nada, creeme")
+       alert("Ya no hay marcha atras " + nombre)
+    </script>
+    </head>
+    <body>
+        <h1>Estas seguro/a que quieres hacer esto??</h1>
+        <button onclick="Responder('SI')">SI</button>
+        <button onclick="Responder('NO')">NO</button>
+        <p id="mensaje"></p>
+        <script>
+            function Responder(respuesta) {
+                const mensajeElement = document.getElementById("mensaje");
+                if (respuesta === 'SI') {
+                    mensajeElement.textContent = "FELICIDADES ACABAS DE VER MI PRIMERA PORGRAMADA AUNQUE CON AYUDA DE IA JEJE";
+                } else if (respuesta === 'NO') {
+                    mensajeElement.textContent = "QUE TE COSTABA PONER QUE SI";
+                }
+            }
+        </script>
+    </body>
+</html> 
